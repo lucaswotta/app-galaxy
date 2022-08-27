@@ -1,0 +1,24 @@
+.table-details {
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    text-align: right;
+  }
+}
+
+btn-close {
+  float: right;
+}
+
+.btn-redirect {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: linear-gradient;
+}
