@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Exoplanet } from '../../models/exoplanet';
+import { Exoplanet } from 'src/app/models/exoplanet';
 
 @Component({
   selector: 'app-details-dialog',
@@ -10,7 +10,7 @@ import { Exoplanet } from '../../models/exoplanet';
 export class DetailsDialogComponent implements OnInit {
 
   public exoplanet: Exoplanet;
-  public link: string = "https://exoplanetarchive.ipac.caltech.edu/overview/"
+  public link: string = "https://exoplanetarchive.ipac.caltech.edu/overview/";
 
   constructor(@Inject(MAT_DIALOG_DATA) exoplanet: Exoplanet) {
     this.exoplanet = exoplanet;
@@ -23,8 +23,8 @@ export class DetailsDialogComponent implements OnInit {
   generateLink(exoplanet: Exoplanet): void {
     let name = exoplanet.name;
     const nameArray = name.split('');
-    for (let i = 0; i < nameArray.length; i++) {
-      if (nameArray[i] === "") {
+    for(let i = 0; i < nameArray.length; i++) {
+      if(nameArray[i] === " ") {
         nameArray[i] = "%20";
       }
     }
