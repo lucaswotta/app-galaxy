@@ -36,5 +36,6 @@ $app-galaxy-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 * { box-sizing: border-box; }
+h1, h2, h3, p, a { color: #e1eeeb}
 html, body { width: 100%; height: 100%; overflow: hidden;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
