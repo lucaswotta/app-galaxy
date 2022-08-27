@@ -22,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   exports: [
     HomeComponent,
     ExoplanetsComponent,
-    DetailsDialogComponent
+    DetailsDialogComponent,
+    NotFoundComponent
   ]
 })
 export class PagesModule { }
